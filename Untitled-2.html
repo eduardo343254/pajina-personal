@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Autos de Lujo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header>
+        <h1>Tu Nombre Aquí</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#venta">Autos en Venta</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="inicio">
+        <h2>Bienvenido a Mi Página de Autos de Lujo</h2>
+        <p>Explora nuestra colección de autos de lujo disponibles para la venta.</p>
+    </section>
+
+    
+    <section id="venta">
+        <h2>Autos de Lujo a la Venta</h2>
+        <div class="galeria-autos">
+            
+            <div class="auto">
+                <img src="descargar (1).jpeg" alt="Auto 1">
+                <p>Descripción del Auto 1</p>
+                <p>Precio: $100,000</p>
+            </div>
+            <div class="auto">
+                <img src="descargar (2).jpeg" alt="Auto 2">
+                <p>Descripción del Auto 2</p>
+                <p>Precio: $120,000</p>
+            </div>
+            <div class="auto">
+                <img src="descargar (3).jpeg" alt="Auto 3">
+                <p>Descripción del Auto 3</p>
+                <p>Precio: $150,000</p>
+            </div>
+            <div class="auto">
+                <img src="descargar (4).jpeg" alt="Auto 4">
+                <p>Descripción del Auto 4</p>
+                <p>Precio: $200,000</p>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p>nos encargamos de darle el mujorservicio anuetros Clientes</p>
+    </section>
+
+    
+    <section id="comentarios">
+        <h2>Comentarios de Clientes</h2>
+        <div class="comentarios">
+            <p>"Excelente servicio y autos de primera calidad!" - juan</p>
+            <p>"Me encantó la experiencia de compra, muy recomendable." - antonio</p>
+            
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Contacto: <a href="mailto:tucorreo@ejemplo.com">yaireduardupalacioszepeda@gmail.com</a></p>
+        <p>Teléfono: +504 8949 2843</p>
+        <p><a href="#privacidad">Política de Privacidad</a></p>
+    </footer>
+
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+<style>
+    
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#venta {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.galeria-autos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.auto {
+    margin: 20px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.auto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.auto p {
+    margin: 10px 0;
+}
+
+
+#comentarios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.comentarios p {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+</style>
+</html>
